@@ -1,0 +1,22 @@
+body {
+    background-color: rgb(42, 42, 45);
+}
+
+.title {
+text-decoration: none;
+color: bisque;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-weight: bold;
+font-size: 30px;
+}
+/* h1 {
+    position:absolute;
+} */
+h2 ul li {
+    list-style: none;
+    display: inline;
+    margin: .50px;
+    position: relative;
+    margin-left: 100px;
+    margin-bottom: 100px;
+}
