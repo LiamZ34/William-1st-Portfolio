@@ -5,13 +5,13 @@
     box-sizing: border-box;
 }
 body {
-    background-color: rgb(42, 42, 45);
+    background-color: rgb(165, 155, 104);
 }
 
 .hero {
     height: 100vh;
     width: 100%;
-    background-image: url(https://preview.redd.it/ew7asfh8itr81.jpg?auto=webp&s=6808e4d09a2d6bb09f32778e4e29404ea47f8a3e);
+    background-image: url(./images/yellowgtr.webp);
     background-size: cover;
     background-position: center;
 }
@@ -25,12 +25,12 @@ nav {
 }
 .logo {
     color: bisque;
-    font-size: 35px;
+    font-size: 50px;
     letter-spacing: -5px;
     cursor: pointer;
 }
 h2 span {
-    font-size: 40px;
+    font-size: 60px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: black;
 }
@@ -81,9 +81,13 @@ h4 {
     display: inline;
     width: 100%;
     padding: 14px 130px 14px 15px;
-    border: 2px solid bisque;
+    border: 2px solid #858585;
     outline: none;
     border-radius: 30px;
+}
+.newslatter form input:first-child:hover{
+    box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
+    transition: .4s;
 }
 .newslatter form input:last-child {
     position: absolute;
@@ -96,14 +100,67 @@ h4 {
     margin-top: 5px;
     cursor: pointer;
     color: black;
+    right: 6px;
+    top: 1px;
 }
 .newslatter form input:last-child:hover {
     color: rgb(90, 90, 90);
     box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
     transition: .4s;
 }
-
-
+.about-me {
+    width: 100%;
+    padding: 100px 0px;
+    background-color: bisque;
+}
+.about-me img {
+    height: auto;
+    width: 430px;
+}
+.about-text {
+    width: 550px;
+}
+.main {
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about-text h2 {
+    color: black;
+    font-size: 65px;
+    margin-bottom: 20px;
+}
+.about-text h5 {
+    color: black;
+    font-size: 30px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+.about-text p {
+    color: black;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;   
+}
+button {
+    color: bisque;
+    background-color: black;
+    padding: 13px 30px;
+    border-radius: 30px;
+    /* box-shadow: 0px 0px 5px, 0px 0px 15px; */
+    border: 2px solid gray;
+    cursor: pointer;
+}
+button:hover {
+    transition: .4s;
+    transform: scale(1.2);
+    background-color: transparent;
+    color: black;
+}
 /* .title {
 text-decoration: none;
 color: bisque;
