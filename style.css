@@ -83,12 +83,11 @@ h4 {
     position: relative;
 } */
 h2 a {
-    color: bisque;
+    color: black;
     text-decoration: none;
-    background-color: black;
-    padding: 15px;
+    background-color: bisque;
     border-radius: 35px;
-    padding: 13px 30px;
+    padding: 10px 25px;
     box-shadow: 0px 0px 5px black, 0px 0px 15px gray;
    position: absolute;
    margin-left: 30px;
@@ -99,14 +98,15 @@ h2 a:hover {
     color: black;
     transform: scale(1.2);
 }
-.about-me {
+.about {
     width: 100%;
-    padding: 100px 0px;
+    padding: 150px 150px;
     background-color: bisque;
 }
-.about-me img {
+.about img {
     height: auto;
     width: 430px;
+    box-shadow: 0px 0px 5px, 0px 0px 15px;
 }
 .about-text {
     width: 550px;
@@ -151,6 +151,117 @@ button:hover {
     transform: scale(1.2);
     background-color: transparent;
     color: black;
+}
+.projects-section {
+    width: 100%;
+    padding: 212px 212px;
+    background-color: rgb(51, 51, 51);
+}
+.projects h2 {
+    color: bisque;
+    font-size: 55px;
+    margin-bottom: 100px;
+}
+.first-project {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.first-project img {
+    height: auto;
+    width: 400px;
+    box-shadow: 0px 0px 5px, 0px 0px 15px;
+    margin: 20px;
+}
+.first-project img:hover {
+transition: .4s;
+transform: scale(1.2);
+cursor: pointer;
+}
+.project-one h2 {
+    color: bisque;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+    cursor: pointer;
+}
+.project-two h2 {
+    color: bisque;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+    cursor: pointer;
+}
+.project-three h2 {
+    color: bisque;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+    cursor: pointer;
+}
+.container {
+    width: 80%;
+    margin: 50px auto;
+}
+.contact-box {
+    background-color: bisque;
+    display: flex;
+}
+.contact-me {
+    flex-basis: 70%;
+    padding: 40px 60px;
+}
+.info {
+    flex-basis: 30%;
+    padding: 40px;
+    background-color: black;
+}
+.info h2 {
+    color: bisque;
+}
+.container h1 {
+    color: black;
+    margin-bottom: 10px;
+}
+.container p {
+    margin-bottom: 40px;
+}
+.input-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px;
+}
+.input-row .input-group {
+    flex-basis: 45%;
+}
+input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid gray;
+    outline: none;
+    padding-bottom: 5px;
+    background-color: bisque;
+}
+label {
+    margin-bottom: 5px;
+}
+textarea {
+    width: 100%;
+    border: 1px solid gray;
+    outline: none;
+    padding: 10px;
+    background-color: bisque;
+    box-sizing: border-box;
 }
 /* .title {
 text-decoration: none;
