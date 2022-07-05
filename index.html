@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <!-- create a portofolio with about, projects, contact and resume header links-->
  <header class="hero">
     <div>
@@ -15,9 +17,9 @@
             <h2 class="logo">W<span>H</span></h2>
                 <ul>  
                     <li> <a  href="#aboutme">About Me</a></li>
-                    <li> <a  href="">Projects</a></li>
-                    <li> <a  href="#">Resume</a></li>
-                    <li> <a  href="#">Contact</a></li>    
+                    <li> <a  href="#projects-sec">Projects</a></li>
+                    <!-- <li> <a  href="#">Resume</a></li> -->
+                    <li> <a  href="#contactme">Contact</a></li>    
                 </ul>
             </nav>
     </div>
@@ -26,7 +28,7 @@
         <h3>William Henriquez</h3>
         <h4>Based in New Jersey, USA</h4>
         <div class="contact-me">
-            <h2><a href="#">Contact Me</a></h2>
+            <h2><a href="#contactme">Contact Me</a></h2>
 
             <!-- <form>  -->
                 <!-- <input type="email" name="email" id="email" placeholder="Enter Your Email"> -->
@@ -49,30 +51,37 @@
         </div>
     </div>
     </section>
-<section id="projects" class="projects-section">
-    <div class="main">
-        <divc class="projects">
-<h2>My latest Projects</h2>
-            </div>
-        </div>
-    <div class="first-project">
-        <div class="project-one">
-        <img src="https://images.hgmsites.net/hug/2022-toyota-supra-a91-cf-edition_100793718_h.jpg" alt="">
-            <h2>Project one</h2>
+    <div class="split"></div>
+<section id="projects-sec" class="projects-section">
+    <div class="center">
+                <h2>My latest Projects</h2>
+                <p>Here are a couple of my latest projects, if you would like to view more of them feel free to check out my <span><a href="https://github.com/LiamZ34">github</a></span> page.</p>
+    </div>
+    <div class="projects">
+        <div>
+            <a href="https://liamz34.github.io/Homework-1/">
+        <img src="./images/Horiseon copy.png" alt="Horiseon Web Page">
+        </a>
+            <p>Horiseon</p>
+            <h5>In this project, I was given the job to veiw the page html and css and make sure it lived up to the accessibility standards.</h5>
         </div>
         <div class="project-two">        
             <img class="project-two" src="https://i.ytimg.com/vi/6y4eNROcFik/maxresdefault.jpg" alt=""> 
-            <h2>Project two</h2>
+            <p>Project two</p>
+            <h5>Information about the project</h5>
         </div>
         <div class="project-three">
             <img src="https://s1.cdn.autoevolution.com/images/news/r34-nissan-gt-r-looks-like-a-nismo-supercar-in-glossy-widebody-rendering-158511_1.jpg" alt="">
-            <h2>Project Three</h2>
+            <p>Project Three</p>
+            <h5>Information about the project</h5>
         </div>
     </div>
-    <div class="container">
+    </section>
+    <div class="split"></div>
+    <section id="contactme" class="container">
         <h1>Connect with me</h1>
         <p>I would love to to connect with you. feel free to reach out me at any time.</p>    
-    </div>
+    
     <div class="contact-box">
         <div class="contact-me">
             <h2>Send your request</h2>
@@ -94,42 +103,56 @@
                     <label>Subject</label>
                     <input type="text" placeholder="Reason for contact">
                   </div> 
-                </div>
-                <label>Message</label>
+                 <label id="messages-label">Message</label>
                 <textarea rows="5" placeholder="Your Message"></textarea>
+                <button type="submit">Send Message</button>
+            </div>
             </form>
         </div>
         <div class="info">
             <h2>Info</h2>
+            <table>
+                <tr>
+                    <td>Email:</td>
+                    <td>Williamh2461@hotmail.com</td>
+                </tr>
+                <tr>
+                    <td>Phone:</td>
+                    <td>973-413-4872</td>
+                </tr>
+                <tr>
+                    <td>Address:</td>
+                    <td>315 Woodland Ave Woodland Park, NJ 07505</td>
+                </tr>
+            </table>
+          <div class="social-links">
+            <a href="https://github.com/LiamZ34">
+            <ion-icon name="logo-github" </ion-icon>
+            </a>
+            <a href="https://www.facebook.com/william.henriquez.754/">
+                <ion-icon name="logo-facebook"></ion-icon>
+             </a>
+            <a href="https://www.linkedin.com/in/william-henriquez-1942b4244/">
+                <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+            </div>
         </div>
-
-
     </div>
-
-
-
-
-
-
-
-    <!-- <section class="contact-section">
-    <main class="contact-me">
-        <h2>Send me a message</h2>
-    </main> 
-    <aside class="contact-box">
-        
-    </aside> -->
-
-
 </section>
-<!-- <footer>
-    <p>Webpage Created By William Henriquez</p>
+<!-- start footer -->
+<footer>
+    <p>CopyRight © 2022 William Henriquez. All Rights Reserved.</p>
     <div class="social">
-        <a href="#"></a>
-        <a href="#"></a>
-        <a href="#"></a>
+        <a href="https://www.linkedin.com/in/william-henriquez-1942b4244/">
+            <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+        <a href="https://www.facebook.com/william.henriquez.754/">
+            <ion-icon name="logo-facebook"></ion-icon>
+        </a>
+        <a href="https://github.com/LiamZ34">
+            <ion-icon name="logo-github"></ion-icon>
+        </a>
     </div>
-    <p>CopyRight By William Henriquez</p>
 </footer>
 </body>
-</html> -->
+</html> 
