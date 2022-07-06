@@ -7,9 +7,6 @@
 body {
     background-color: rgb(165, 155, 104);
 }
-:root {
-    
-}
 .split {
     background-color: black;
     height: 5px;
@@ -61,6 +58,10 @@ nav ul li a:hover {
     top: 40%;
     left: 8%;
     transform: translateY(-50%);
+}
+.contact-me {
+    flex-basis: 70%;
+    padding: 20px 10px;
 }
 .name {
     color: black;
@@ -199,7 +200,7 @@ span a {
 .projects img {
     height: auto;
     width: 400px;
-    box-shadow: 0px 0px 5px, 0px 0px 15px;
+    box-shadow: 0px 0px 5px black, 0px 0px 15px black;
     margin: 20px;
     border-radius: 10px;
 }
@@ -208,31 +209,6 @@ transition: .4s;
 transform: scale(1.1);
 cursor: pointer;
 }
-/* .project-one h2 {
-    color: bisque;
-    font-size: 25px;
-    display: flex;
-    justify-content: space-around;
-    margin-top: 25px;
-    cursor: pointer;
-}
-.project-two h2 {
-    color: bisque;
-    font-size: 25px;
-    display: flex;
-    justify-content: space-around;
-    margin-top: 25px;
-    cursor: pointer;
-}
-.project-three h2 {
-    color: bisque;
-    font-size: 25px;
-    display: flex;
-    justify-content: space-around;
-    margin-top: 25px;
-    cursor: pointer;
-} */
-
 /* contact section */
 .container {
     width: 80%;
@@ -241,10 +217,6 @@ cursor: pointer;
 .contact-box {
     background-color: bisque;
     display: flex;
-}
-.contact-me {
-    flex-basis: 70%;
-    padding: 40px 60px;
 }
 .info {
     flex-basis: 30%;
@@ -367,6 +339,83 @@ footer p {
     }
     section {
         padding: 80px 2%;
+        transition: .3s;
+    }
+    .hero {
+        padding: 10px 4%;
+        transition: .2s;
+    }
+    .about img {
+        height: auto;
+        width: 400px;
+        transition: .3s;
+    }
+    .about-text {
+        width: 450px;
+        transition: .3s;
+    }
+    .projects img {
+        height: auto;
+        width: 350px;
+        margin: 20px;
+        transition: .3s;
+    }
+}
+@media (max-width:1280px) {
+    .about-text {
+        width: 350px;
+        transition: .3s;
+    }
+    .projects img {
+        height: auto;
+        width: 320px;
+        margin: 20px;
+        transition: .3s;
+    }
+    .input-group {
+        margin: 5px;
+    }
+}
+@media (max-width:1150px) {
+    .about-text {
+        width: 300px;
+        transition: .3s;
+    }
+    .about img {
+        height: auto;
+        width: 350px;
+        transition: .3s;
+    }
+    .about-text h2 {
+        color: black;
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+    .about-text h5 {
+        font-size: 25px;
+    }
+    .about-text p {
+        font-size: 15px;
+    }
+    .projects img {
+        width: 300px;
+        transition: .3s;
+    }
+}
+@media (max-width:990px) {
+    .about img {
+        height: auto;
+        width: 250px;
+        transition: .3s;
+    }
+    .about-text {
+        width: 330px;
+        transition: .3s;
+    } 
+    .projects img {
+        height: auto;
+        width: 200px;
+        margin: 20px;
         transition: .3s;
     }
 }
